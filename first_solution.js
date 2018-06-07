@@ -8,7 +8,7 @@ const comments = document.getElementById('list');
 const allButtons = document.querySelectorAll('button');
 const likes = document.querySelector(".likes");
 const commentInput = document.getElementById("comment-input");
-let likeTracker = {}
+
 let isPaused;
 
 const startInterval = () => {
@@ -55,6 +55,7 @@ const resumeGame = () => {
 }
 
 const likeNumber = () => { // when like button is clicked
+  let likeTracker = {}
   let number = counter.innerHTML //grab current value of count
   let li;
   if (!likeTracker[number]){ //if number doesnt exist in object

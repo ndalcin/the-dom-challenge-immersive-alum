@@ -1,6 +1,4 @@
 
-What do you guys want to start with?
-
 1:
   select counter element
   add eventListener to document .. DOMContentLoaded, start
